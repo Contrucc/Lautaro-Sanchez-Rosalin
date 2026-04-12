@@ -1,13 +1,46 @@
- 
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <title>Valorant Lineups Pro</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <h1>VALORANT LINEUPS</h1>
+        <div id="selector-agentes">
+            </div>
+    </header>
 
-<h1>Holaaaaa</h1>
-<p>Mi nombre de Usuario es Contrucc:D</p>
+    <main id="app" class="oculto">
+        <section class="perfil-agente">
+            <div class="col-imagen">
+                <img id="agente-img" src="" alt="Agente">
+            </div>
+            <div class="col-info">
+                <h2 id="agente-nombre">Nombre</h2>
+                <iframe id="agente-video" width="100%" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </section>
 
+        <section class="filtros">
+            <select id="filtro-mapa">
+                <option value="Todos">Todos los mapas</option>
+                <option value="Ascent">Ascent</option>
+                <option value="Bind">Bind</option>
+            </select>
+            <select id="filtro-lado">
+                <option value="Todos">Ataque y Defensa</option>
+                <option value="Ataque">Ataque</option>
+                <option value="Defensa">Defensa</option>
+            </select>
+        </section>
+
+        <section id="lista-lineups" class="grid-lineups">
+            </section>
+    </main>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
 </body>
-</html> 
+</html>
