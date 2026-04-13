@@ -2,45 +2,100 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Valorant Lineups Pro</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Valorant Lineups Hub - Guía de Lineups</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <header>
-        <h1>VALORANT LINEUPS</h1>
-        <div id="selector-agentes">
+    <div class="container">
+        <!-- HEADER -->
+        <div class="header">
+            <div class="title">
+                <h1>VALORANT <span style="color:#ff4656">LINEUPS HUB</span></h1>
+                <p>Lineups tácticos • Granadas • Arrows • Veneno • Defensa y Ataque</p>
             </div>
-    </header>
+            <div class="badge">🎯 Guía para clutch</div>
+        </div>
 
-    <main id="app" class="oculto">
-        <section class="perfil-agente">
-            <div class="col-imagen">
-                <img id="agente-img" src="" alt="Agente">
+        <!-- HERO SECTION: video borde a borde + personaje grande -->
+        <div class="hero-section" id="heroSection">
+            <div class="hero-background-video">
+                <iframe id="heroVideo" src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&mute=1&loop=1&playlist=dQw4w9WgXcQ&controls=0&showinfo=0&rel=0" title="Video de habilidades" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="hero-overlay"></div>
             </div>
-            <div class="col-info">
-                <h2 id="agente-nombre">Nombre</h2>
-                <iframe id="agente-video" width="100%" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            
+            <div class="hero-content">
+                <div class="hero-left">
+                    <div class="agent-badge">AGENTE</div>
+                    <div class="agent-name-hero" id="agentNameHero">SELECCIONA UN AGENTE</div>
+                    <div class="agent-role-hero" id="agentRoleHero"></div>
+                </div>
+                <div class="hero-center">
+                    <div class="agent-portrait-large">
+                        <img id="mainAgentImg" src="" alt="Agente">
+                    </div>
+                </div>
+                <div class="hero-right"></div>
             </div>
-        </section>
+        </div>
 
-        <section class="filtros">
-            <select id="filtro-mapa">
-                <option value="Todos">Todos los mapas</option>
-                <option value="Ascent">Ascent</option>
-                <option value="Bind">Bind</option>
-            </select>
-            <select id="filtro-lado">
-                <option value="Todos">Ataque y Defensa</option>
-                <option value="Ataque">Ataque</option>
-                <option value="Defensa">Defensa</option>
-            </select>
-        </section>
+        <!-- DESCRIPCIÓN / LORE (debajo del video, arriba de habilidades) -->
+        <div class="lore-section" id="loreSection" style="display: none;">
+            <div class="lore-content">
+                <p id="agentDescription"></p>
+            </div>
+        </div>
 
-        <section id="lista-lineups" class="grid-lineups">
-            </section>
-    </main>
+        <!-- SECCIÓN DE HABILIDADES -->
+        <div class="abilities-section" id="abilitiesSection" style="display: none;">
+            <div class="section-label"><i class="fas fa-bolt"></i> HABILIDADES</div>
+            <div class="abilities-grid" id="abilitiesGrid"></div>
+        </div>
 
-    <script src="data.js"></script>
+        <!-- GALERÍA DE AGENTES -->
+        <div class="agents-gallery-section">
+            <div class="section-label"><i class="fas fa-users"></i> TODOS LOS AGENTES</div>
+            <div class="gallery-container">
+                <button class="gallery-btn prev-btn" id="prevAgentBtn"><i class="fas fa-chevron-left"></i></button>
+                <div class="gallery-track-container">
+                    <div class="gallery-track" id="agentsGalleryTrack"></div>
+                </div>
+                <button class="gallery-btn next-btn" id="nextAgentBtn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+
+        <!-- SECCIÓN DE LINEUPS -->
+        <div class="lineups-section">
+            <div class="section-label"><i class="fas fa-map-marked-alt"></i> LINEUPS TÁCTICOS</div>
+            <div class="filters-bar">
+                <div class="filter-group">
+                    <label><i class="fas fa-globe-americas"></i> Mapa:</label>
+                    <select id="mapSelect">
+                        <option value="ascent">Ascent</option><option value="bind">Bind</option>
+                        <option value="haven">Haven</option><option value="split">Split</option>
+                        <option value="lotus">Lotus</option>
+                        <option value="pearl">Pearl</option>
+                        <option value="fracture">Fracture</option>
+                        <option value="icebox">Icebox</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label><i class="fas fa-crosshairs"></i> Bando:</label>
+                    <select id="sideSelect">
+                        <option value="attack">Ataque 🔴</option>
+                        <option value="defense">Defensa 🔵</option>
+                    </select>
+                </div>
+                <button id="refreshLineupsBtn" class="btn-refresh"><i class="fas fa-sync-alt"></i> Mostrar Lineups</button>
+            </div>
+            <div class="lineups-list" id="lineupsList">
+                <div class="info-message"><i class="fas fa-arrow-up"></i> Selecciona un agente de la galería</div>
+            </div>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
