@@ -12,6 +12,7 @@ La idea es crear una pagina de Valoran donde mostrar todas las guias de Lineaups
    - Vista de Lineaups: Debajo del todo habria una barra para eleguir el mapa y si es en ataque o defensa. Siguiendo a lo anterior entarian los lineaups con su video y para que Site es (A/B/C). Todavida nose si acerlos en listas o en bloques, pero si quiero que al seleccionarlo se ponga una ventana emergente (para evitar recargar toda la pagina) que muestre mas informacion (Ej. Dificultad, El Site, Utilidad, etc)
      
  Por ahora solo tengo testas ideas sensillas y voy a ir viendo si hago cambios en la idea que esta en mi cabeza o si se queda asi como esta, por ahora me parece bien el camino que va tomando
+ 
                                       ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠸⣦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
                                        ⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠹⣝⠳⠦⣄⣀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
                                        ⠀⠀⠀⠀⠀⠀⠀⠀⠀⣼⠁⠙⠶⣤⣀⡀⠀⢀⣀⣀⣠⠤⠶⠶⠾⠷⠆⠀⠀⠉⠉⠉⠙⠲⢤⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
