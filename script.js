@@ -48,7 +48,7 @@ const LINEUPS_DB = [
 ];
 
 const agentVideoMap = {
-    "Brimstone": "dQw4w9WgXcQ", "Viper": "9bZkp7q19f0", "Sova": "kJQP7kiw5Fk",
+    "Brimstone": "TQJw8aG_mk", "Viper": "9bZkp7q19f0", "Sova": "kJQP7kiw5Fk",
     "Killjoy": "VYOjWnB4A7Y", "Jett": "3JZ_D3ELwOQ", "Omen": "LgSPs2rVY7s"
 };
 
